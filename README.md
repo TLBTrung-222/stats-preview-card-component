@@ -21,8 +21,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Links
 
--   Solution URL: [URL here]()
--   Live Site URL: [URL here]()
+-   Solution URL: [Mr Coder](https://www.youtube.com/watch?v=dhBR6-Jjql4)
+-   Live Site URL: [Github Pages](https://tlbtrung-222.github.io/stats-preview-card-component/)
 
 ## My process
 
@@ -35,16 +35,41 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 -   If you want the layout split into multi column with the same width (items have padding), do not use flex. Instead, use grid. [Read here](https://css-tricks.com/equal-columns-with-flexbox-its-more-complicated-than-you-might-think/)
 
--   How to uppercase the text : 
+-   How to uppercase the text :
+
 ```css
 p {
     text-transform: uppercase;
 }
 ```
 
+-   Create a layer on the image
+
+```html
+<div class="img-container">
+    <img src="./images/image-header-desktop.jpg" alt="header image" />
+    <div class="purple-layer"></div>
+</div>
+```
+
+```css
+.img-container {
+    position: relative;
+}
+
+.purple-layer {
+    background-color: hsl(277, 64%, 61%, 40%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+```
 
 ### Continued development
 
 -   Semantic HTML5 markup
+-   Know when to use flex or grid
 
 ### Useful resources
+-   CSS Tricks : [Here](https://css-tricks.com/equal-columns-with-flexbox-its-more-complicated-than-you-might-think/)
