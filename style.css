@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white-stat: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 15px;
+}
+
+.card-container {
+    background-color: var(--dark-desaturated-blue);
+    max-width: 60rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.text-section {
+    padding: 4rem;
+}
+
+.title {
+    color: white;
+    font-family: Inter, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.title>span {
+    color: var(--soft-violet);
+}
+
+.sub-title {
+    font-family: Inter, sans-serif;
+    color: var(--slightly-transparent-white-main-paragraph);
+    margin-bottom: 5rem;
+    font-size: 0.8rem;
+    line-height: 1.7;
+}
+
+.counting {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+.counting h3 {
+    font-family: Inter, sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.counting p {
+    text-transform: uppercase;
+    font-family: Lexend Deca, sans-serif;
+    color: var(--slightly-transparent-white-stat);
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container img {
+    display: block;
+}
+
+.purple-layer {
+    background-color: hsl(277, 64%, 61%, 40%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+@media screen and (max-width: 375px) {
+
+    .card-container {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .img-container {
+        margin-bottom: 1rem;
+    }
+
+    .text-section {
+        padding: 2rem;
+    }
+
+    .title {
+        font-size: 1.3rem;
+    }
+
+    .sub-title {
+        font-size: 0.7rem;
+        margin-bottom: 2rem;
+    }
+
+    .counting {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .counting>div {
+        margin-bottom: 2rem;
+    }
+
+    .counting h3 {
+        font-size: 1.2rem;
+    }
+    .counting p{
+        font-size: 0.7rem;
+    }
+
+}
