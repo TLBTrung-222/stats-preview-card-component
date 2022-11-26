@@ -45,7 +45,7 @@ p {
 
 -   Create a layer on the image (2 methods)
 
-# Method 1: Create an extra div tag underneath the image
+#### Method 1: Create an extra div tag underneath the image
 
 ```html
 <div class="img-container">
@@ -68,7 +68,7 @@ p {
 }
 ```
 
-# Method 2: Using ::after (pseudo element) combine with content attribute
+#### Method 2: Using ::after (pseudo element) combine with content attribute
 
 ```html
 <div class="img-container">
