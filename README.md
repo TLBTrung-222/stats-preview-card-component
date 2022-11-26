@@ -43,7 +43,9 @@ p {
 }
 ```
 
--   Create a layer on the image
+-   Create a layer on the image (2 methods)
+
+# Method 1: Create an extra div tag underneath the image
 
 ```html
 <div class="img-container">
@@ -65,7 +67,33 @@ p {
     top: 0;
 }
 ```
+
+# Method 2: Using ::after (pseudo element)
+
+```html
+<div class="img-container">
+    <img src="./images/image-header-desktop.jpg" alt="header image" />
+</div>
+```
+
+```css
+.img-container {
+    position: relative;
+}
+
+.img-container::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: hsla(277, 64%, 61%, 0.6);
+    top: 0;
+    left: 0;
+}
+```
+
 -   Make image more responsive
+
 ```css
 .img-container img {
     width: 100%;
@@ -80,4 +108,5 @@ p {
 -   Know when to use flex or grid
 
 ### Useful resources
+
 -   CSS Tricks : [Here](https://css-tricks.com/equal-columns-with-flexbox-its-more-complicated-than-you-might-think/)
