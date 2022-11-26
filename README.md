@@ -65,6 +65,14 @@ p {
     top: 0;
 }
 ```
+-   Make image more responsive
+```css
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+```
 
 ### Continued development
 
