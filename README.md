@@ -68,7 +68,7 @@ p {
 }
 ```
 
-# Method 2: Using ::after (pseudo element)
+# Method 2: Using ::after (pseudo element) combine with content attribute
 
 ```html
 <div class="img-container">
